@@ -13,7 +13,7 @@ async function getApiGithub() {
         <article id="about-texto" class="about-texto">
           <h2>Sobre mim</h2>
           <p>
-            Sou um desenvolvedo Full Stack em formação, com experiência em
+            Sou um desenvolvedor Full Stack em formação, com experiência em
             JavaScript, React, Node.js, SQL. Apaixonado(a) por resolver
             problemas e construir aplicações que fazem a diferença. Meu foco
             está em aprendizado contínuo e desenvolvimento de projetos reais.
