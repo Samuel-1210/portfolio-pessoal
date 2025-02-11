@@ -72,7 +72,7 @@ a {
   top: 0;
   width: 100%;
   background-color: var(--greenbold);
-  border-bottom: 1px solid var(--nature-500);
+  border-bottom: 1px solid var(--nature);
   filter: opacity(0.9);
 }
 
@@ -193,7 +193,6 @@ h1 {
 }
 
 .about-texto p {
-  margin-left: 30px;
   padding: 1rem;
 }
 
@@ -225,6 +224,7 @@ h1 {
 .contato_content p {
   display: block;
   text-align: justify;
+  font-size: 1rem;
 }
 
 /* Estilização redes sociais */
@@ -276,7 +276,7 @@ input:valid ~ label,
 textarea:focus ~ label,
 textarea:valid ~ label {
   top: -2.5px;
-  margin-left: 16em;
+  /* margin-left: 16em; */
   background-color: var(--sage);
 }
 
@@ -326,10 +326,10 @@ textarea {
 
 form span {
   margin-bottom: 0.5rem;
-  margin-left: 0.75rem;
   font-size: 0.75rem;
   line-height: 1.25rem;
   color: red;
+  position: relative;
 }
 .footer_content {
   margin: 0;
@@ -346,6 +346,10 @@ form span {
 /* Smartphone - Teças até 480px */
 
 @media screen and (max-width: 480px) {
+  main {
+    margin: 2rem;
+  }
+
   body {
     display: flex;
     flex-direction: column;
@@ -374,7 +378,7 @@ form span {
   }
 
   #titulo a {
-    font-size: 1.75;
+    font-size: 1.75rem;
   }
 
   .menu_lista {
@@ -399,7 +403,7 @@ form span {
   }
 
   .home_content .botao {
-    width: 80;
+    width: 80%;
   }
   .home_content img {
     width: 80%;
@@ -473,10 +477,35 @@ form span {
   form {
     margin: 1rem 0 0 0;
     padding: 1rem;
+    gap: 1.3rem;
+  }
+
+  #home_sucess {
+    height: calc(100vh - 180px);
+    max-width: 1120px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    width: 80vw;
+    flex-direction: column;
+    text-align: justify;
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  main {
+    margin: 2rem;
+  }
+
+  #home_sucess {
+    height: calc(100vh - 180px);
+    max-width: 1120px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    width: 80vw;
+    flex-direction: column;
+    text-align: justify;
+  }
+
   body {
     display: flex;
     flex-direction: column;
@@ -605,10 +634,10 @@ form span {
   form {
     margin: 1rem 0 0 0;
     padding: 1rem;
+    gap: 1.3rem;
   }
 }
-
-#home_sucess {
+.home_sucess {
   height: calc(100vh - 180px);
   max-width: 1120px;
   margin: 1rem auto;
@@ -617,12 +646,12 @@ form span {
   flex-direction: column;
 }
 
-#home_sucess h1 {
+.home_sucess h1 {
   font-size: 2rem;
   font-weight: bold;
 }
 
-#home_sucess h4 {
+.home_sucess h4 {
   font-size: 1.2rem;
   font-weight: bold;
   padding: 2rem;
