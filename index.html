@@ -28,7 +28,9 @@
       <!-- Div Conteudo do Cabeçalho -->
       <div id="header_content" class="menu_content">
         <!-- Titulo do Cabeçalho -->
-        <div id="titulo"><a href="#">Universo</a></div>
+        <div id="titulo">
+          <a href="#">Samuel dos Santos - Dev Fullstack </a>
+        </div>
 
         <div id="menu" class="flex">
           <nav>
@@ -75,30 +77,7 @@
         </article>
       </section>
 
-      <section id="about" class="about_container">
-        <img src="./assets/img/Samuel.jpeg" alt="Foto do Perfil do Github" />
-
-        <article id="about-texto" class="about-texto">
-          <h2>Sobre mim</h2>
-          <p>
-            Sou um desenvolvedo Full Stack em formação, com experiência em
-            JavaScript, React, Node.js, SQL. Apaixonado(a) por resolver
-            problemas e construir aplicações que fazem a diferença. Meu foco
-            está em aprendizado contínuo e desenvolvimento de projetos reais.
-          </p>
-          <div id="about_github" class="flex about_github">
-            <a
-              href="https://github.com/Samuel-1210"
-              target="_blank"
-              class="botao"
-            >
-              Github
-            </a>
-            <p>200 Seguidores</p>
-            <p>20 Repositórios</p>
-          </div>
-        </article>
-      </section>
+      <section id="about" class="about_container"></section>
 
       <section id="contact" class="contato_container">
         <article id="redes_sociais" class="contato_content">
@@ -140,10 +119,20 @@
           </div>
         </article>
 
-        <form action="" method="POST">
+        <form
+          action="https://formsubmit.co/89a5fd70c67fdb4d6089295d14a34eb8"
+          method="POST"
+          id="formulario"
+        >
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500/success.html"
+          />
+          <input type="hidden" name="_captcha" value="" false />
           <div class="grupo-form">
             <input
-              id="text"
+              id="nome"
               type="text"
               name="nome"
               placeholder="Digite o seu nome"
@@ -195,5 +184,7 @@
     <footer class="flex footer_content">
       Feito com 💚 por Samuel dos Santos - 2025
     </footer>
+
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
