@@ -370,6 +370,7 @@ form span {
   .menu_container {
     height: auto;
     padding: 1rem 0;
+    z-index: 9999;
   }
 
   .menu_content {
@@ -526,6 +527,7 @@ form span {
   .menu_container {
     height: auto;
     padding: 1rem 0;
+    z-index: 9999;
   }
 
   .menu_content {
