@@ -442,6 +442,11 @@ form span {
     width: 80%;
   }
 
+  .about-texto p {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
   /* Ajustes Contato */
   .contato_container {
     grid-template-columns: 1fr;
@@ -572,6 +577,11 @@ form span {
 
   .about_github p {
     display: none;
+  }
+
+  .about-texto p {
+    margin-left: 0;
+    padding: 1rem;
   }
 
   .about_github .botao {
