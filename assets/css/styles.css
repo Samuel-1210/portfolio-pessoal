@@ -373,9 +373,12 @@ form span {
     z-index: 9999;
   }
 
-  .menu_content {
+  .menu_content_success {
+    max-width: 1120px;
+    padding: 0 24px;
+    width: 100%;
+    display: flex;
     justify-content: center;
-    max-width: 100%;
   }
 
   #titulo a {
@@ -492,7 +495,7 @@ form span {
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 960px) {
+@media screen and (min-width: 481px) and (max-width: 1280px) {
   main {
     margin: 2rem;
   }
