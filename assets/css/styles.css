@@ -72,7 +72,7 @@ a {
   top: 0;
   width: 100%;
   background-color: var(--greenbold);
-  border-bottom: 1px solid var(--nature);
+  border-bottom: 1px solid var(--nature-500);
   filter: opacity(0.9);
 }
 
@@ -193,6 +193,7 @@ h1 {
 }
 
 .about-texto p {
+  margin-left: 30px;
   padding: 1rem;
 }
 
@@ -224,7 +225,6 @@ h1 {
 .contato_content p {
   display: block;
   text-align: justify;
-  font-size: 1rem;
 }
 
 /* Estilização redes sociais */
@@ -253,6 +253,7 @@ form {
   margin: 7rem 0 0 0;
   padding: 1.25rem;
   border: none;
+  gap: 1.3rem;
 }
 
 form label {
@@ -347,7 +348,7 @@ form span {
 
 @media screen and (max-width: 480px) {
   main {
-    margin: 2rem;
+    margin: 1rem;
   }
 
   body {
@@ -370,7 +371,6 @@ form span {
   .menu_container {
     height: auto;
     padding: 1rem 0;
-    z-index: 9999;
   }
 
   .menu_content {
@@ -379,7 +379,7 @@ form span {
   }
 
   #titulo a {
-    font-size: 1.75rem;
+    font-size: 1.75;
   }
 
   .menu_lista {
@@ -404,7 +404,7 @@ form span {
   }
 
   .home_content .botao {
-    width: 80%;
+    width: 80;
   }
   .home_content img {
     width: 80%;
@@ -480,31 +480,11 @@ form span {
     padding: 1rem;
     gap: 1.3rem;
   }
-
-  #home_sucess {
-    height: calc(100vh - 180px);
-    max-width: 1120px;
-    margin: 1rem auto;
-    padding: 0 1rem;
-    width: 80vw;
-    flex-direction: column;
-    text-align: justify;
-  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 960px) {
   main {
-    margin: 2rem;
-  }
-
-  #home_sucess {
-    height: calc(100vh - 180px);
-    max-width: 1120px;
-    margin: 1rem auto;
-    padding: 0 1rem;
-    width: 80vw;
-    flex-direction: column;
-    text-align: justify;
+    margin: 1rem;
   }
 
   body {
@@ -527,7 +507,6 @@ form span {
   .menu_container {
     height: auto;
     padding: 1rem 0;
-    z-index: 9999;
   }
 
   .menu_content {
@@ -639,7 +618,7 @@ form span {
     gap: 1.3rem;
   }
 }
-.home_sucess {
+#home_sucess {
   height: calc(100vh - 180px);
   max-width: 1120px;
   margin: 1rem auto;
@@ -648,12 +627,12 @@ form span {
   flex-direction: column;
 }
 
-.home_sucess h1 {
+#home_sucess h1 {
   font-size: 2rem;
   font-weight: bold;
 }
 
-.home_sucess h4 {
+#home_sucess h4 {
   font-size: 1.2rem;
   font-weight: bold;
   padding: 2rem;
